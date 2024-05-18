@@ -23,7 +23,6 @@ header {
     color: black;
 }
 
-
 #listaSecciones li {
     margin: 0 10px; 
 }
@@ -94,20 +93,22 @@ button:hover {
 }
 
 #catalogo {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+    gap: 1%;
 }
 
 .libro_catalogo {
-    flex: 0 1 calc(15% - 20px); /* Especifica el tamaño flexible del libro, ocupando inicialmente el 33.33% del contenedor y dejando un margen de 20px */
-    margin: 20px; /* Agrega un margen inferior para separar los libros */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .libro_catalogo img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor del libro */
-    height: auto; /* Mantén la relación de aspecto de la imagen */
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -121,6 +122,13 @@ button:hover {
     height: auto; /* Mantén la relación de aspecto de la imagen */
 }
 
+.checkbox{
+   display: flex; 
+   margin-right: 20px;
+}
+#checkboxPromociones{
+    margin-bottom: 15px;
+}
 
 .detalle {
 display: none;
