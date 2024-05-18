@@ -11,12 +11,16 @@
 
 <body>
     <header>
-        <h1>Bienvenido a la Tienda de Libros</h1>
+        <div class="title">
+            <i class="icono"></i>
+            <h1>Bienvenido a Nuestra Tienda de Libros Tu relajacion!</h1>
+        </div>
         <nav id="listaSecciones">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#destacados">Libros Destacados</a></li>
                 <li><a href="#catalogo">Catálogo de Libros</a></li>
+                <li><a href="#funciona">Como Funciona?</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -24,15 +28,17 @@
 
     <main>
         <section id="inicio">
-            <h2>Bienvenido a nuestra Tienda de Libros</h2>
+            <h2>Bienvenido a Tu relajacion</h2>
             <p>Somos tu destino ideal para encontrar los mejores libros para disfrutar en tu tiempo libre, estudios o
-                trabajo. En nuestra tienda, ofrecemos una amplia variedad de títulos, desde clásicos atemporales hasta
+                trabajo. En nuestra tienda, ofrecemos una amplia variedad de títulos, que vamos apliando constantemente desde clásicos atemporales hasta
                 las últimas novedades. Ya seas un apasionado de la literatura, un estudiante ávido de conocimiento o
                 simplemente estés buscando una buena lectura para relajarte, ¡estás en el lugar correcto!</p>
             <p>Explora nuestro catálogo de libros destacados, encuentra tus próximas lecturas favoritas y no dudes en
                 ponerte en contacto con nosotros si necesitas ayuda o tienes alguna pregunta sobre nuestros productos.
             </p>
         </section>
+
+
 
         <h2>Libros Destacados</h2>
         <section id="destacados">
@@ -157,14 +163,59 @@
          
             <!-- Repite este bloque para más libros en el catálogo -->
         </section>
-
+        <section id="funciona">
+            <h2>Como trabajamos?</h2>
+            <p>
+                Para comenzar tu experiencia de compra, simplemente ponte en contacto con nosotros a través de nuestros
+                diversos canales de comunicación. Ya sea por correo electrónico, teléfono o mediante nuestro formulario
+                en línea, estamos aquí para ayudarte a encontrar el libro ideal que estás buscando.
+            </p>
+            <h3>
+                ¿Qué podemos ofrecerte?
+            </h3>
+            <p>
+                Nuestro equipo está comprometido en proporcionarte una amplia selección de libros destacados, desde
+                géneros clásicos hasta los más contemporáneos. Explora nuestro catálogo y descubre tus próximas lecturas
+                favoritas. Si no encontras el libro deseado no te procupes!, contacta con nuestro equipo e intentaremos conseguirlo!
+            </p>
+            <h3>
+                Variedad de Medios de Pago
+            </h3>
+            <p>
+                Además, para tu comodidad, aceptamos una variedad de métodos de pago, garantizando una experiencia de
+                compra sin complicaciones. Desde tarjetas de crédito y débito hasta opciones de pago en efectivo,
+                estamos aquí para adaptarnos a tus preferencias.
+                ¡Nos encantaría ayudarte!
+                No dudes en comunicarte con nosotros si necesitas orientación, recomendaciones o si tienes alguna
+                pregunta sobre nuestros productos. ¡Estamos aquí para hacer que tu experiencia de lectura sea
+                extraordinaria!
+            </p>
+            
+        </section>
 
         <h2>Contacto:</h2>
         <section id="contacto">
-            <form id="formulario-contacto" action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <ul>
+                <div class="numeros">
+                    <li>Numero</li>
+                    <p class="numero">
+                        +54125555352
+                    </p>
+                    <p>o tambien: </p>
+                    <p class="numero">
+                        +54125512551
+                    </p>
+                </div>
+                <div class="mailContacto">
+                    <li style="margin-right: 10px;">Mail</li>
+                    <p>librosTuRelajacion@gmail.com</p>
+                </div>
+            </ul>
+            <h2>Formulario de contacto:</h2>
 
+            <form id="formulario-contacto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
 

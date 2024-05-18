@@ -77,7 +77,8 @@ function estelefono(numero) {
 function conexionBackendAPI() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let fail = Math.random() > 0.5;
+            //aca en teoria podria dar true si se conectara contra una api realmente
+            let fail = false;
             if (fail) {
                 reject("Error: fallo irrecuperable");
             } else {
