@@ -26,6 +26,20 @@ body, html {
     height: 100%; 
 }
 
+.title{
+    display: flex;
+    align-items: center;
+}
+.icono {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    background-image: url('icono.png'); 
+    background-size: cover; 
+    margin-right:15px ;
+}
+
+
 header {
     background-color: #d2a5a5;
     color: white;
@@ -47,7 +61,6 @@ header {
     width: 100%;
 }
 
-
 #listaSecciones li {
     margin: 0 0.5em;
 }
@@ -63,7 +76,7 @@ section {
 }
 
 h2 {
-    border-bottom: 1px solid #bl;
+    border-bottom: 1px solid;
     padding-bottom: 10px;
     width: auto;
 }
@@ -128,21 +141,22 @@ button:hover {
 }
 
 #catalogo {
-    display: flex;
-    justify-content: space-between;
-    margin: 0.5em;
-    flex-wrap: wrap ;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+    gap: 1%;
 }
 
 .libro_catalogo {
-    flex: 0 1 calc(15% - 1.1em); /* Especifica el tamaño flexible del libro, ocupando inicialmente el 33.33% del contenedor y dejando un margen de 20px */
-    margin: 1.5em; /* Agrega un margen inferior para separar los libros */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .libro_catalogo img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor del libro */
-    height: auto; /* Mantén la relación de aspecto de la imagen */
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -152,19 +166,39 @@ button:hover {
 }
 
 .libro img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor del libro */
-    height: auto; /* Mantén la relación de aspecto de la imagen */
+    width: 100%; 
+    height: auto;
 }
 
+.checkbox{
+   display: flex; 
+   margin-right: 20px;
+}
+#checkboxPromociones{
+    margin-bottom: 15px;
+}
 
 .detalle {
 display: none;
 background-color: #b7b7b7;
 }
 
+
+.numeros{
+    display: flex;
+    align-items: center;
+}
+.numero {
+    margin: 5px;
+}
+.mailContacto{
+    display: flex;
+    align-items: center;
+}
 /* Estilos para el formulario de contacto */
 
 #contacto {
+    text-align: left;
     background-color: #d2a5a5; 
     padding: 1em;
     width: 100%;
@@ -174,33 +208,26 @@ background-color: #b7b7b7;
 #formulario-contacto {
     width: 100%; 
     margin: 0 auto; 
-}
-
-#formulario-contacto label {
-    display: block; 
-    margin-bottom: 10px; 
+    padding: 0;
 }
 
 #formulario-contacto input[type="text"],
 #formulario-contacto input[type="email"],
 #formulario-contacto input[type="tel"],
 #formulario-contacto textarea {
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px;
+    width: 100%;
+    max-width: 600px; /* Establece el ancho máximo deseado para los campos */
+    height: 40px;
+    margin: 0 auto; /* Centra los campos horizontalmente */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+.mensaje{
+    height: 80px;
+}
+.checkbox {
+    margin-left: auto; /* Mueve el checkbox hacia la derecha */
 }
 
-#formulario-contacto input[type="submit"] {
-    background-color: #4CAF50;
-    color: white; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-}
 
 #formulario-contacto input[type="submit"]:hover {
     background-color: #45a049; 
@@ -210,12 +237,12 @@ background-color: #b7b7b7;
     #listaSecciones a {
         font-size: 1.4rem;
 }
-
+}
 @media only screen and (max-width: 600px ) {
     #listaSecciones a {
         font-size: 1.2rem;
 }
-
+}
 @media only screen and (max-width: 400px ) {
     #listaSecciones a {
         font-size: 0.8rem;
@@ -223,4 +250,4 @@ background-color: #b7b7b7;
     #catalogo {
         display: block;
 }
-
+}
