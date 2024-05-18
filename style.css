@@ -1,44 +1,71 @@
 /* Estilos generales */
-body {
+.animacion_rebote {
+    animation-name: rebote;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes rebote {
+    0% {
+        transform: translateX(-200px);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0px);
+    
+    }
+}
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%; 
 }
 
 header {
     background-color: #d2a5a5;
     color: white;
-    padding: 20px;
+    padding: 0.5em;
     text-align: start;
+    width: 100%;
 }
 
 #listaSecciones ul {
     display: flex; 
     justify-content: center; 
-    list-style-type: none; 
+    list-style-type: none;
+    padding: 0.1em; 
 }
 
 #listaSecciones a {
-    font-size: 24px; 
+    font-size: 1.6rem; 
     color: black;
+    width: 100%;
 }
 
 
 #listaSecciones li {
-    margin: 0 10px; 
+    margin: 0 0.5em;
 }
  
 main {
-    padding: 20px;
+    padding: 0.5em;
+    width: 100%;
 }
 
 section {
     margin-bottom: 30px;
+    width: 100%;
 }
 
 h2 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #bl;
     padding-bottom: 10px;
+    width: auto;
 }
 
 footer {
@@ -46,11 +73,13 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
+    width: 100%;
 }
 
 label {
@@ -62,9 +91,12 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 0.7em;
+    margin-bottom: 1.2em;
     border: 1px solid #ccc;
+}
+input, textarea {
+    box-sizing: border-box;
 }
 
 select {
@@ -90,19 +122,22 @@ button:hover {
 
 #destacados {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 0;
 }
 
 #catalogo {
     display: flex;
     justify-content: space-between;
-    margin: 5px;
-    flex-wrap: wrap;
+    margin: 0.5em;
+    flex-wrap: wrap ;
+    width: auto;
 }
 
 .libro_catalogo {
-    flex: 0 1 calc(15% - 20px); /* Especifica el tamaño flexible del libro, ocupando inicialmente el 33.33% del contenedor y dejando un margen de 20px */
-    margin: 20px; /* Agrega un margen inferior para separar los libros */
+    flex: 0 1 calc(15% - 1.1em); /* Especifica el tamaño flexible del libro, ocupando inicialmente el 33.33% del contenedor y dejando un margen de 20px */
+    margin: 1.5em; /* Agrega un margen inferior para separar los libros */
 }
 
 .libro_catalogo img {
@@ -113,7 +148,7 @@ button:hover {
 
 .libro {
     flex: 0 1 30%; /* Especifica el tamaño flexible del libro, ocupando inicialmente el 30% del contenedor */
-    margin: 20px;
+    margin: 1.1em;
 }
 
 .libro img {
@@ -131,11 +166,13 @@ background-color: #b7b7b7;
 
 #contacto {
     background-color: #d2a5a5; 
-    padding: 20px; 
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 #formulario-contacto {
-    max-width: 600px; 
+    width: 100%; 
     margin: 0 auto; 
 }
 
@@ -168,3 +205,22 @@ background-color: #b7b7b7;
 #formulario-contacto input[type="submit"]:hover {
     background-color: #45a049; 
 }
+
+@media only screen and (max-width: 800px ) {
+    #listaSecciones a {
+        font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 600px ) {
+    #listaSecciones a {
+        font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 400px ) {
+    #listaSecciones a {
+        font-size: 0.8rem;
+    }
+    #catalogo {
+        display: block;
+}
+
