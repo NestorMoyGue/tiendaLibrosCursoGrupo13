@@ -200,33 +200,32 @@ background-color: #b7b7b7;
 #contacto {
     text-align: left;
     background-color: #d2a5a5; 
-    padding: 1em;
-    width: 100%;
-    box-sizing: border-box; 
+    padding:1em; 
 }
 
 #formulario-contacto {
-    width: 100%; 
-    margin: 0 auto; 
+    width: 100%;
+    margin: 0;
     padding: 0;
 }
+
+
 
 #formulario-contacto input[type="text"],
 #formulario-contacto input[type="email"],
 #formulario-contacto input[type="tel"],
 #formulario-contacto textarea {
     width: 100%;
-    max-width: 600px; /* Establece el ancho máximo deseado para los campos */
-    height: 40px;
+    max-width: 500px; /* Establece el ancho máximo deseado para los campos */
+    height: 3em;
     margin: 0 auto; /* Centra los campos horizontalmente */
     box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
 }
+
 .mensaje{
-    height: 80px;
+    height: 50px;
 }
-.checkbox {
-    margin-left: auto; /* Mueve el checkbox hacia la derecha */
-}
+
 
 
 #formulario-contacto input[type="submit"]:hover {
