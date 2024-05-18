@@ -87,3 +87,19 @@ function conexionBackendAPI() {
         }, 2000);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    let libros = document.querySelectorAll('.libro_catalogo');
+
+    libros.forEach(function(libro) {
+        libro.addEventListener('click', function() {
+            let detalles = libro.querySelector('.detalle');
+
+            if (detalles.style.display === "none" || detalles.style.display === "") {
+                detalles.style.display = "block";
+            } else {
+                detalles.style.display = "none";
+            }
+        });
+    });
+});
