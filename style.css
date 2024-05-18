@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d2a5a5;
+    color: white;
+    padding: 20px;
+    text-align: start;
+}
+
+#listaSecciones ul {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none; 
+}
+
+#listaSecciones a {
+    font-size: 24px; 
+    color: black;
+}
+
+
+#listaSecciones li {
+    margin: 0 10px; 
+}
+ 
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+#destacados {
+    display: flex;
+    justify-content: space-between;
+}
+
+#catalogo {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.libro_catalogo {
+    flex: 0 1 calc(15% - 20px); /* Especifica el tamaño flexible del libro, ocupando inicialmente el 33.33% del contenedor y dejando un margen de 20px */
+    margin: 20px; /* Agrega un margen inferior para separar los libros */
+}
+
+.libro_catalogo img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor del libro */
+    height: auto; /* Mantén la relación de aspecto de la imagen */
+}
+
+
+.libro {
+    flex: 0 1 30%; /* Especifica el tamaño flexible del libro, ocupando inicialmente el 30% del contenedor */
+    margin: 20px;
+}
+
+.libro img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor del libro */
+    height: auto; /* Mantén la relación de aspecto de la imagen */
+}
+
+
+.detalle {
+display: none;
+background-color: #b7b7b7;
+}
+
+/* Estilos para el formulario de contacto */
+
+#contacto {
+    background-color: #d2a5a5; 
+    padding: 20px; 
+}
+
+#formulario-contacto {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+#formulario-contacto label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"],
+#formulario-contacto input[type="tel"],
+#formulario-contacto textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+#formulario-contacto input[type="submit"] {
+    background-color: #4CAF50;
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#formulario-contacto input[type="submit"]:hover {
+    background-color: #45a049; 
+}
