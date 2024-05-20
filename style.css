@@ -64,6 +64,10 @@ header {
     width: 100%;
 }
 
+#listaSecciones a:hover{
+    color:whitesmoke;
+}
+
 #listaSecciones li {
     margin: 0 0.5em;
 }
